@@ -1,0 +1,43 @@
+@import url("./colors.css");
+
+.bg-primary {
+  background-color: var(--bg-primary-color) !important;
+}
+
+.navbar-title {
+  color: var(--navbar-title-color);
+}
+
+.font-title {
+  font-family: "Cabin";
+  font-weight: 700;
+}
+
+.font-subtitle {
+  font-family: "Cabin";
+  font-weight: 600;
+}
+
+.font-primary {
+  font-family: "Cabin";
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: var(--navbar-title-color);
+  text-decoration: none;
+}
+
+.fixed-bottom {
+  position: absolute;
+  bottom: 0;
+}
