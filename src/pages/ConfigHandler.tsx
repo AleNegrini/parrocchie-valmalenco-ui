@@ -1,4 +1,5 @@
 import Sidebar from '../components/Sidebar';
+import ConfigTable from '../components/ConfigTable';
 
 type ConfigHandlerProps = {
     version: string
@@ -10,7 +11,7 @@ const ConfigHandler = ({version}: ConfigHandlerProps) => {
             <div className="row page-body-wrapper">
                 <Sidebar version={version}></Sidebar>
                 <div className="col-sm-10">
-                    <h2>Config</h2>
+                    <ConfigTable/>
                 </div>
             </div>
         </div>   

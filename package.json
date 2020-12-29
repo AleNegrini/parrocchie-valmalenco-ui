@@ -9,6 +9,8 @@
     "@typescript-eslint/parser": "^4.11.1",
     "bootstrap": "^4.5.3",
     "eslint": "^7.16.0",
+    "fs": "0.0.1-security",
+    "ini": "^2.0.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
