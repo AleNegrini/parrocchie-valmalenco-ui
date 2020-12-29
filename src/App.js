@@ -2,7 +2,10 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/common.css'
 
-import Sidebar from './components/Sidebar.tsx';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+import Calendar from './pages/Calendar';
+import ConfigHandler from './pages/ConfigHandler';
 
 import GoogleFontLoader from 'react-google-font-loader';
 
@@ -19,11 +22,12 @@ function App() {
           }
         ]}
       />
-      <div className="container-fluid page-body-wrapper">
-        <div className="row page-body-wrapper">
-          <Sidebar version={packageJson.version}></Sidebar>
-        </div>
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={() => <Calendar version={packageJson.version}/>}/>
+          <Route exact path="/config" component={() => <ConfigHandler version={packageJson.version}/>} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

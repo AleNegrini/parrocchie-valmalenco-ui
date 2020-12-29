@@ -24,9 +24,6 @@ const Sidebar = ({version}: SidebarProps) => {
                         version={version} />
                 </div>
             </div>
-            <div className="col-sm-10">
-                <h2>Perfetto</h2>
-            </div>
         </>
         
     )

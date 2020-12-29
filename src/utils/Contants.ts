@@ -5,8 +5,8 @@ class Constants {
     static sidebar_footer_label: string = "Version";
 
     static navbar_items_label: {[key: string]: string[];} = {
-        Menu: ["Calendario", "Aggiungi Celebrazione"],
-        Impostazioni: ["Configurazione IP Mic"]
+        Menu: ["Calendario,/", "Aggiungi Celebrazione,/"],
+        Impostazioni: ["Configurazione IP Mic,/config"]
     }
 }
 

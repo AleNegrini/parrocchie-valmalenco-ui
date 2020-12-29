@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type SidebarNavProps = {
     navbarItems: { [key: string]: string[]; }
 }
@@ -13,7 +15,8 @@ const SidebarNav = ({navbarItems}:SidebarNavProps) => {
                         {navbarItems[header].map((item) =>
                             <li key={header+""+item}>
                                 <div className="mt-4 mb-4 h6">
-                                    <a href="/">{item}</a></div>
+                                    <Link to={item.split(",")[1]}>{item.split(",")[0]}</Link>
+                                </div>
                             </li>
                         )}
                     </ul>
