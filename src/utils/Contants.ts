@@ -8,6 +8,13 @@ class Constants {
         Menu: ["Calendario,/", "Aggiungi Celebrazione,/"],
         Impostazioni: ["Configurazione IP Mic,/config"]
     }
+
+    static add_label_btn: string = "Aggiungi"
+    static edit_label_btn: string = "Modifica"
+    static del_label_btn:string = "Elimina"
+    static conf_tab_f1:string = "Parrocchia"
+    static conf_tab_f2:string = "IP Microfono"
+    static conf_tab_f3:string = "Porta Microfono"
 }
 
 export default Constants;

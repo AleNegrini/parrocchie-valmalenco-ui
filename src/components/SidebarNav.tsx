@@ -14,7 +14,7 @@ const SidebarNav = ({navbarItems}:SidebarNavProps) => {
                     <ul key={header} className="mb-5 text-white font-subtitle">
                         {navbarItems[header].map((item) =>
                             <li key={item}>
-                                <div className="mt-4 mb-4 h6">
+                                <div className="pt-2 pb-2 h6">
                                     <Link to={item.split(",")[1]}>{item.split(",")[0]}</Link>
                                 </div>
                             </li>

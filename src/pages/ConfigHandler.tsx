@@ -7,7 +7,7 @@ type ConfigHandlerProps = {
 
 const ConfigHandler = ({version}: ConfigHandlerProps) => {
     return (
-        <div className="container-fluid page-body-wrapper">
+        <div className="container-fluid page-body-wrapper bg-grey">
             <div className="row page-body-wrapper">
                 <Sidebar version={version}></Sidebar>
                 <div className="col-sm-10">
